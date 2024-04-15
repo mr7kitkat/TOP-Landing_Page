@@ -9,9 +9,20 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script>
       $(document).ready(function () {
-        $(".heading").click(function () {
-          $("div.links").toggleClass("display-flex");
-        });
+        var deviceWidth = $(window).width();
+
+        if (deviceWidth >= 320 && deviceWidth <= 767) {
+          $(".heading").click(function () {
+            $("div.links").toggleClass("display-flex");
+          });
+          // Code to run for mobile devices (320px to 767px)
+          // For instance, you can hide/show elements or perform other mobile-specific actions.
+          console.log("Mobile device detected!");
+        } else {
+          // Code to run for other devices (greater than 767px)
+          // You can handle desktop-specific behavior here.
+          console.log("Desktop or tablet device detected.");
+        }
       });
     </script>
   </head>
