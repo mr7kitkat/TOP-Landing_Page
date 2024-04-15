@@ -6,6 +6,14 @@
     <title>TOP: Landing Page</title>
     <link rel="stylesheet" href="styles/reset.css" />
     <link rel="stylesheet" href="styles/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".heading").click(function () {
+          $("div.links").toggleClass("display-flex");
+        });
+      });
+    </script>
   </head>
   <body>
     <header>
@@ -13,9 +21,9 @@
         <nav class="section">
           <p class="heading">Header Logo</p>
           <div class="links">
-            <a href="#" class="link">header link one</a
-            ><a href="#" class="link">header link two</a
-            ><a href="#" class="link">header link three</a>
+            <a href="#" class="link">Link_1</a
+            ><a href="#" class="link">Link_2</a
+            ><a href="#" class="link">Link_3</a>
           </div>
         </nav>
         <div class="hero-section section">
